@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Animate a marker along line</title>
+<title>Bangalore Marathon</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
@@ -21,8 +21,8 @@ var map = L.mapbox.map('map', 'gyenumula.f9fe8b6b')
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
 var geojson = { type: 'LineString', coordinates: [] };
-var start = [10, 20];
-var momentum = [3, 3];
+var start = [77.59, 12.97];
+var momentum = [0.003, 0.003];
 
 for (var i = 0; i < 300; i++) {
     start[0] += momentum[0];
