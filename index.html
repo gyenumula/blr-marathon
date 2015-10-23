@@ -86,7 +86,7 @@
 					]
 				}
 			var routeStyle = {
-    				color: #FAE512,
+    				color: '#FAE512',
     				weight: 6,
     				opacity: 0.6
 			}
@@ -100,9 +100,10 @@
 			var j = 0;
 
 			// Create a marker and add it to the map.
-			var marker = L.Marker([0, 0], {
+			var marker = L.circleMarker([0, 0], {
   				icon: L.mapbox.marker.icon({
-    					'marker-color': '#F45064'
+    					'marker-color': '#F45064',
+    					radius: 8
   					})
 				}).addTo(map);
 	
