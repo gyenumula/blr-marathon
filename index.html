@@ -43,8 +43,7 @@
 						[77.58743,12.97583],
 						[77.58834,12.97648],
 						[77.59072,12.97772],
-						[77.59209,12.97665],
-						[77.59393,12.97844],
+						[77.59253,12.97970],
 						[77.59382,12.97859],
 						[77.59539,12.97992],
 						[77.59589,12.98020],
@@ -106,12 +105,12 @@
     				// Set the marker to be at the same point as one
     				// of the segments or the line.
     				marker.setLatLng(L.latLng(
-        			geojson.coordinates[j][1],
-        			geojson.coordinates[j][0]));
+        				route.coordinates[j][1],
+        				route.coordinates[j][0]));
 
     				// Move to the next point of the line
     				// until `j` reaches the length of the array.
-    				if (++j < geojson.coordinates.length) setTimeout(tick, 10);
+    				if (++j < route.coordinates.length) setTimeout(tick, 1000);
 			}
 		</script>
 	</body>
