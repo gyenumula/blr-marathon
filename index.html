@@ -83,7 +83,14 @@
 						[77.61877,12.98537],
 						[77.61985,12.98725],
 						[77.62200,12.98762]
-					]
+					],
+					style:
+					{
+      						fill		:'#BB884B',
+      						stroke-width	:"3",
+      						fill-opacity	:0.6
+  					}
+					
 				}
 			
 			// Add this generated geojson object to the map.
@@ -110,7 +117,7 @@
 
     				// Move to the next point of the line
     				// until `j` reaches the length of the array.
-    				if (++j < route.coordinates.length) setTimeout(tick, 1000);
+    				if (++j < route.coordinates.length) setTimeout(tick, 10);
 			}
 		</script>
 	</body>
