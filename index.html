@@ -104,6 +104,9 @@
 
 			var marker = L.circleMarker([0, 0]).addTo(map);
 			marker.setRadius(4);
+			marker.setIcon(L.mapbox.marker.icon({
+                    		'marker-color': '#f5d04c'
+                    		}));
 			tick();
 			
 			function tick() {
