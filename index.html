@@ -101,16 +101,11 @@
 			var j = 0;
 
 			// Create a marker and add it to the map.
-		/*	var marker = L.marker(
-						[0, 0], 
-						{
-  							icon: L.mapbox.marker.icon(
-  								{
-    									'marker-color': '#f86767'
-  								}
-  							)
-						}
-					).addTo(map);
+			var marker = L.marker([0, 0], {
+  					icon: L.mapbox.marker.icon({
+    						'marker-color': '#f86767'
+  					})
+				}).addTo(map);
 	
 			tick();
 			
@@ -124,7 +119,7 @@
     				// Move to the next point of the line
     				// until `j` reaches the length of the array.
     				if (++j < route.coordinates.length) setTimeout(tick, 1000);
-			}*/
+			}
 		</script>
 	</body>
 </html>
