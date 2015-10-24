@@ -27,8 +27,8 @@
 			// Generate a GeoJSON line. You could also load GeoJSON via AJAX
 			// or generate it some other way.
 			var route = { 
-					type: 'LineString', 
-					coordinates: [
+					'type': 'LineString', 
+					'coordinates': [
 						[77.59341,12.97009],
 						[77.59346,12.96994],
 						[77.59298,12.96984],
@@ -87,14 +87,14 @@
 				};
 		
 			var routeStyle = {
-    				color: '#f45064',
-    				weight: 5,
-    				opacity: 0.6
+    				'color': '#f45064',
+    				'weight': 5,
+    				'opacity': 0.6
 			};
 			
 			// Add this generated geojson object to the map.
 			L.geoJson(route, {
-    				style: routeStyle
+    				'style': routeStyle
 			}).addTo(map);
 
 			// Create a counter with a value of 0.
@@ -103,7 +103,7 @@
 			// Create a marker and add it to the map.
 			var marker = L.marker([0, 0], {
   				icon: L.mapbox.marker.icon({
-    					marker-color: '#f4E050'
+    					'marker-color': '#f4E050'
   					})
 				}).addTo(map);
 	
