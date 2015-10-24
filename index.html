@@ -102,11 +102,13 @@
 
 			// Create a marker and add it to the map.
 
-			var marker = L.circleMarker([0, 0]).addTo(map);
-			marker.setRadius(4);
+			var marker = L.circleMarker([0, 0], {'radius' : 10}).addTo(map);
+		/*	marker.setRadius(4);
 			marker.setIcon(L.mapbox.marker.icon({
                     		'marker-color': '#f5d04c'
-                    		}));
+                    		}));*/
+                    		
+                    	marker.setOpacity(0);
 			tick();
 			
 			function tick() {
