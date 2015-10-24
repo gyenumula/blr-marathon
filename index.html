@@ -17,7 +17,7 @@
 
 		<script>
 			L.mapbox.accessToken = 'pk.eyJ1IjoiZ3llbnVtdWxhIiwiYSI6ImNpZzIyMjZoaDE2aTV2NW01dnk0d2dvamMifQ.7j58X0hkqwgaZw09g0kMww';
-			var map = L.mapbox.map('map', 'gyenumula.f9fe8b6b')
+			var map = L.mapbox.map('map', 'gyenumula.f9fe8b6b');
 			
 			map.dragging.disable();
 			map.touchZoom.disable();
@@ -84,13 +84,13 @@
 						[77.61985,12.98725],
 						[77.62200,12.98762]
 					]
-				}
+				};
 		
 			var routeStyle = {
     				color: '#f45064',
     				weight: 5,
     				opacity: 0.6
-			}
+			};
 			
 			// Add this generated geojson object to the map.
 			L.geoJson(route, {
