@@ -38,7 +38,9 @@
 						[77.58877,12.96823],
 						[77.59008,12.97276],
 						[77.58994,12.97326],
-						[77.59041,12.97498],
+						[77.59011,12.97405],
+						[77.58869,12.97436],
+						[77.58858,12.97447],
 						[77.58860,12.97511],
 						[77.58743,12.97583],
 						[77.58834,12.97648],
@@ -89,7 +91,7 @@
 			var routeStyle = {
     				'color': '#f45064',
     				'weight': 5,
-    				'opacity': 0.6
+    				'opacity': 0
 			};
 			
 			// Add this generated geojson object to the map.
@@ -102,13 +104,8 @@
 
 			// Create a marker and add it to the map.
 
-			var marker = L.circleMarker([0, 0], {'radius' : 10}).addTo(map);
-		/*	marker.setRadius(4);
-			marker.setIcon(L.mapbox.marker.icon({
-                    		'marker-color': '#f5d04c'
-                    		}));*/
-                    		
-                    	marker.setOpacity(0);
+			var marker = L.circleMarker([0, 0]).addTo(map);
+			marker.setRadius(4);
 			tick();
 			
 			function tick() {
