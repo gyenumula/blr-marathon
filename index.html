@@ -117,9 +117,12 @@
     				'style': routeStyle
 			}).addTo(map);
 
+			// Dummy marker
+			var marker = L.circleMarker([0, 0]).addTo(map);
+			
 			// Set a custom icon on each marker based on feature properties.
 			iconLayer.on('layeradd', function(e) {
-    				var marker = e.layer,
+    				marker = e.layer,
         			feature = marker.feature;
 
 				 marker.setIcon(L.icon(feature.properties.icon));
